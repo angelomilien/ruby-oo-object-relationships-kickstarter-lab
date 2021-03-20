@@ -1,5 +1,6 @@
 require "pry"
 
+
 class Backer
     
     attr_reader :name
@@ -18,6 +19,5 @@ class Backer
 
     def backed_projects
         my_project_backers.collect {|pro| pro.project}
-        # binding.pry
     end
 end
